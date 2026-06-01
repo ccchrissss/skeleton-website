@@ -38,35 +38,43 @@
     <nav class="flex justify-between p-4">
       <h2 class="text-xl">Lantz Darling</h2>
       <ul class="flex justify-between w-sm">
-        <li class="text-xl">Music</li>
-        <li class="text-xl">Merch</li>
-        <li class="text-xl">Bio</li>
+        <li class="text-xl"><a href="#music">Music</a></li>
+        <li class="text-xl"><a href="#merch">Merch</a> </li>
+        <li class="text-xl"><a href="#bio">Bio</a> </li>
       </ul>
     </nav>
     
     <main>
-      <section class="flex flex-col p-4">
+      <section id="music" class="flex flex-col p-4">
         <h1 class="text-3xl py-10">Lantz Darling</h1>
         <h2 class="text-2xl pb-4">Music</h2>
 
         <div class="pb-4">
           <iframe class="w-xs" src="https://www.youtube.com/embed/TnPcKUf0miY?si=XCuFgbcasUZ_qBCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <button class="border-2 border-solid p-1 mt-2">Purchase Track</button>
+          <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Track</button>
+          <!-- <script async src="https://js.stripe.com/v3/buy-button.js">
+          </script>
+          
+          <stripe-buy-button
+            buy-button-id="buy_btn_1TdL7PEh3qG5cXY6x1ul5wKv"
+            publishable-key="pk_test_51TcCd0Eh3qG5cXY6DBr6h6BAlXj5NB380pOLdyOj234B3WgZmu1Ka0Ft5BV2OZrihdk94hKSi8EgJPeMpA66hj7l00UViaVHnb"
+          >
+          </stripe-buy-button> -->
         </div>
 
         <div class="pb-4">
           <iframe class="w-xs" src="https://www.youtube.com/embed/bvxPrCSm-zc?si=udBhawai42Z4XDfd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <button class="border-2 border-solid p-1 mt-2">Purchase Track</button>
+          <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Track</button>
         </div>
 
         <div class="pb-4">
           <iframe class="w-xs" src="https://www.youtube.com/embed/rcwTLxJy3tI?si=83H-Feaulo_-So01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <button class="border-2 border-solid p-1 mt-2">Purchase Track</button>
+          <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Track</button>
         </div>
 
         <div class="pb-4">
           <iframe class="w-xs" src="https://youtube.com/embed/LKCBWEPpPXI?si=JypGLf__l_f44ETD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <button class="border-2 border-solid p-1 mt-2">Purchase Track</button>
+          <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Track</button>
         </div>
 
         
@@ -79,24 +87,24 @@
       </section>
     </main>
 
-    <section class="flex flex-col p-4">
+    <section id="merch" class="flex flex-col p-4">
       <h2 class="text-2xl pb-4">Merch</h2>
 
       <div class="pb-4">
         <img class="w-xs" src="https://www.houseofblanks.com/cdn/shop/files/HeavyweightTshirt_Natural_02.jpg?v=1726516460&width=990" alt="t-shirt" />
-        <button class="border-2 border-solid p-1 mt-2">Purchase Shirt</button>
+        <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Shirt</button>
       </div>
       <div class="pb-4">
         <img class="w-xs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrNmh4cD0hxlWztZh5hzfP-0ue3TgZG6Wig&s" alt="t-shirt" />
-        <button class="border-2 border-solid p-1 mt-2">Purchase Hat</button>
+        <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Hat</button>
       </div>
       <div class="pb-4">
         <img class="w-xs" src="https://thestickybrand.com/cdn/shop/products/LBxSBPack2.jpg?v=1770054931" alt="t-shirt" />
-        <button class="border-2 border-solid p-1 mt-2">Purchase Sticker Pack</button>
+        <button type="button" class="cursor-pointer hover:bg-gray-200 border-2 border-solid p-1 mt-2">Purchase Sticker Pack</button>
       </div>
     </section>
 
-    <section class="flex flex-col p-4">
+    <section id="bio" class="flex flex-col p-4">
       <h2 class="text-2xl pb-4">Bio</h2>
       <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -108,9 +116,11 @@
     <section class="flex flex-col p-4">
       <h2 class="text-2xl pb-4">Contact</h2>
       <form class="flex flex-col">
-        <label>type your message here:</label>
+        <label>Send Lantz a message:</label>
         <input class="border border-1" type="text" />
-        <button>Submit</button>
+        <label>Email Address:</label>
+        <input class="border border-1" type="text" />
+        <button type="button">Submit</button>
       </form>
     </section>
 
